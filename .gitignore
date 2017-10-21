@@ -63,6 +63,8 @@ fabric.properties
 *.iml
 modules.xml
 .idea/misc.xml
+.idea/php.xml
+.idea/sqldialects.xml
 *.ipr
 
 
