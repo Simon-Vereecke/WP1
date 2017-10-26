@@ -8,7 +8,6 @@ class Contacts extends CI_Controller
     {
         parent::__construct();
         $this->load->model('contact_model');
-        $this->load->model('news_model');
         $this->load->helper('url_helper');
     }
 

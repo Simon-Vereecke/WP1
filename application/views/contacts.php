@@ -23,7 +23,7 @@
                         "<td>".$contact["id"]."</td>" .
                         "<td>".$contact["name"]."</td>" .
                         "<td>".$contact["email"]."</td>" .
-                        "<td><a href=\"contacts/".$contact["id"]."\" class=\"btn btn-secondary\">
+                        "<td><a href=\"index.php/contacts/".$contact["id"]."\" class=\"btn btn-secondary\">
                             Details</a></td>" .
                         "</tr>";
                 }
