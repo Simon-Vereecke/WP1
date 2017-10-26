@@ -15,7 +15,8 @@ $this->load->helper('url');
         <div class="col-lg-8">
             <h2 class="card-title text-shadow text-uppercase mb-0">Name</h2>
             <h3 class="text-shadow"><?php echo $contact["name"]?></h3>
-            <p>Email: <?php echo $contact["email"]?></p>
+            <h2 class="card-title text-shadow text-uppercase mb-0">Email</h2>
+            <h3 class="text-shadow"><?php echo $contact["email"]?></h3>
         </div>
     </div>
 </div>
