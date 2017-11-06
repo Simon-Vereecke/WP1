@@ -23,11 +23,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-<<<<<<< .merge_file_a17512
-$config['base_url'] = 'http://192.168.33.22/WP1';
-=======
 $config['base_url'] = 'http://192.168.33.22/';
->>>>>>> .merge_file_a08724
 
 /*
 |--------------------------------------------------------------------------
