@@ -35,15 +35,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav mx-auto">
                 <li class="nav-item px-lg-4">
-                    <a class="nav-link text-uppercase text-expanded" href="contacts">Home
+                    <a class="nav-link text-uppercase text-expanded" href="<?=base_url();?>">Home
                         <span class="sr-only">(current)</span>
                     </a>
                 </li>
                 <li class="nav-item px-lg-4">
-                    <a class="nav-link text-uppercase text-expanded" href="contact">Contact</a>
-                </li>
-                <li class="nav-item px-lg-4">
-                    <a class="nav-link text-uppercase text-expanded" href="about">About</a>
+                    <a class="nav-link text-uppercase text-expanded" href="<?=base_url('index.php/about');?>">About</a>
                 </li>
             </ul>
         </div>
