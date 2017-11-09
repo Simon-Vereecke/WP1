@@ -1,13 +1,3 @@
-<<<<<<< HEAD
-<?php
-/**
- * Created by PhpStorm.
- * User: simowner
- * Date: 10/19/17
- * Time: 2:49 PM
- */
-print('Team Testosteron');
-=======
 <div class="container">
 
     <div class="bg-faded p-4 my-4">
@@ -68,4 +58,3 @@ print('Team Testosteron');
     </div>
 
 </div>
->>>>>>> testing_routing

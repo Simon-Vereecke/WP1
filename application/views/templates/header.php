@@ -1,11 +1,3 @@
-<<<<<<< HEAD
-<html>
-    <head>
-        <title>Team Test</title>
-    </head>
-    <body>
-        <h1><?php echo $title; ?></h1>
-=======
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 ?><!DOCTYPE html>
@@ -57,4 +49,3 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </div>
     </div>
 </nav>
->>>>>>> testing_routing
