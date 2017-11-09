@@ -10,7 +10,7 @@ $this->load->helper('url');
     <div class="row">
         <div id="logo" class="col-lg-4">
             <img class="img-fluid float-left mr-4 d-none d-lg-block"
-             src="../../public/img/contact_logo.png" alt="">
+             src="<?=base_url('public/img//contact_logo.png');?>" alt="">
         </div>
         <div class="col-lg-8">
             <h2 class="card-title text-shadow text-uppercase mb-0">Name</h2>
