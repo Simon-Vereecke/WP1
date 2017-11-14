@@ -35,6 +35,46 @@ class Contact_model extends CI_Model
         return $statement != null ? $statement->fetch() : array();
     }
 
+    public function remove($contactId)
+    {
+        $pdo = $this->openConnection();
+        $statement = null;
+        if ($pdo != null) {
+            $query = "DELETE FROM contact WHERE id = :id";
+            $statement = $pdo->prepare($query);
+            $statement->bindParam(":id", $contactId, PDO::PARAM_INT);
+            $isRemoved = $statement->execute();
+        }
+        return $isRemoved;
+    }
+
+    public function add($name, $email)
+    {
+        $pdo = $this->openConnection();
+        if ($pdo != null) {
+            $query = "INSERT INTO contact (name, email) VALUE (:fullName, :email)";
+            $statement = $pdo->prepare($query);
+            $statement->bindParam(':fullName', $name, PDO::PARAM_STR);
+            $statement->bindParam(':email', $email, PDO::PARAM_STR);
+            return $statement->execute();
+        }
+        return false;
+    }
+
+    public function update($contactId, $name, $email)
+    {
+        $pdo = $this->openConnection();
+        if ($pdo != null) {
+            $query = "UPDATE contact SET name = :name, email = :email WHERE id = :id";
+            $statement = $pdo->prepare($query);
+            $statement->bindParam(':name', $name, PDO::PARAM_STR);
+            $statement->bindParam(':email', $email, PDO::PARAM_STR);
+            $statement->bindParam(':id', $contactId, PDO::PARAM_INT);
+            return $statement->execute();
+        }
+        return false;
+    }
+
     private function openConnection()
     {
         try {
