@@ -55,18 +55,18 @@
             <strong>Add Contact</strong>
         </h2>
         <hr class="divider">
-        <form method="post" action="<?php base_url();?>index.php/contacts/create">
+        <form method="post" action="<?php base_url();?>index.php/contacts/create" onsubmit="return validateForm()">
             <div class="row">
                 <div class="form-group col-lg-6">
                     <label class="text-heading">Name</label>
-                    <input name="name" type="text" class="form-control form-con">
+                    <input id="contactName" name="name" type="text" class="form-control form-con">
                 </div>
                 <div class="form-group col-lg-6 ">
                     <label class="text-heading">Email Address</label>
-                    <input name="email" type="email" class="form-control">
+                    <input id="contactEmail" name="email" type="text" class="form-control">
                 </div>
                 <div class="form-group col-lg-12">
-                    <button type="submit" class="btn btn-secondary">Submit</button>
+                    <button id="btnAddContact" type="submit" class="btn btn-secondary">Submit</button>
                 </div>
             </div>
         </form>

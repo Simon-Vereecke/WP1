@@ -1,8 +1,6 @@
-
 <h2><?php echo $title; ?></h2>
 
-<?php foreach ($contacts as $contact): ?>
-
+<?php foreach ($contacts as $contact) : ?>
     <h3><?php echo $contact['name']; ?></h3>
     <div class="main">
         <?php echo $contact['email']; ?>

@@ -32,6 +32,7 @@ class Contact_model extends CI_Model
             $statement->bindParam(":id", $contactId, PDO::PARAM_INT);
             $statement->execute();
         }
+        $pdo = null;
         return $statement != null ? $statement->fetch() : array();
     }
 
@@ -45,6 +46,7 @@ class Contact_model extends CI_Model
             $statement->bindParam(":id", $contactId, PDO::PARAM_INT);
             $isRemoved = $statement->execute();
         }
+        $pdo = null;
         return $isRemoved;
     }
 
@@ -58,6 +60,7 @@ class Contact_model extends CI_Model
             $statement->bindParam(':email', $email, PDO::PARAM_STR);
             return $statement->execute();
         }
+        $pdo = null;
         return false;
     }
 
@@ -70,6 +73,7 @@ class Contact_model extends CI_Model
             $statement->bindParam(':name', $name, PDO::PARAM_STR);
             $statement->bindParam(':email', $email, PDO::PARAM_STR);
             $statement->bindParam(':id', $contactId, PDO::PARAM_INT);
+            $pdo = null;
             return $statement->execute();
         }
         return false;
